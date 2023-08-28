@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "useUnknownInCatchVariables": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "prisma/client.tsxx",
+    "pages/api/posts/addComment.ts",
+    "pages/api/posts/[details].ts",
+    "pages/api/posts/getPosts.ts",
+    "pages/api/posts/deletePost.ts",
+    "pages/api/posts/authPosts.ts",
+    "prisma/client.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
